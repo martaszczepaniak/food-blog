@@ -34,70 +34,32 @@ a {
     display: flex;
 }
 
-li {
+.navigation li {
     padding-right: 20px;
 }
 
 .recipe-section {
-    margin-top: 75px; 
+    margin: 75px 0; 
 }
 
 .main-section {
     background-color: #fff;
-    padding-left: 60px;
-    padding-right: 60px;
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.72);
-    padding-top: 40px;
-}
-
-.logo {
-    height: 69px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-}
-
-.logo-text {
-    padding-top:20px;
-    padding-left: 20px;
-    float: left;
-}
-
-.logo-image {
-    float: left;
-    width: 4%;
-    
+    padding: 40px 60px;
 }
 
 .right-bar {
     margin-top: 25px;
     margin-bottom: 40px;
-    padding-top: 25px;
     padding-right: 25px;
     padding-left: 25px;
     background-color: #ABE8CF;
-    box-shadow: 1px 1px 2px 1px rgba(29, 28, 28, 0.51);
+    box-shadow: 1px 1px 2px gray;
 }
 
-.recipe-title {
-    padding-right: 30px;
-}
 
 .recipes p {
     font-size: 18px;
-}
-
-.recipes .ingredients p {
-    font-size: 18px;
-}
-
-.recipes .ingredients {
-    background-color: #FFA14B;
-    height: auto;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    box-shadow: 1px 1px 3px #888888;
-    color: #F0F0F0;
 }
 
 .category-image img {
@@ -107,19 +69,11 @@ li {
     margin-right: auto;
 }
 
-.logo-image img {
-    width:100%;
-}
-
 .recipe-ingredients ul {
-  background-color: #F5A541;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  letter-spacing: 0.5px;
-  word-spacing: 5px;
-  line-height: 22px;
-  list-style: none;
+    background-color: #F5A541;
+    list-style: none;
+    padding: 20px;
+    box-shadow: 1px 1px 2px gray;
 }
 
 .recipe-text {
@@ -132,6 +86,9 @@ li {
   line-height: 22px;
 }
 
-.footer {
-    height: 100px;
+@media all and (max-width: 768px) {
+    .main-section {
+        padding: 0;
+        margin: 0;
+    }
 }
